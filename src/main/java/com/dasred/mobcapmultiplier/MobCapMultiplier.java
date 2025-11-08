@@ -6,7 +6,6 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
-import com.dasred.mobcapmultiplier.MobCapCommands;
 
 @Mod(MobCapMultiplier.MODID)
 public class MobCapMultiplier {
