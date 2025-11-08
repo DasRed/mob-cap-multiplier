@@ -1,0 +1,26 @@
+# OSX
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+/MARCO.md
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+runs
+run-data
+
+repo
