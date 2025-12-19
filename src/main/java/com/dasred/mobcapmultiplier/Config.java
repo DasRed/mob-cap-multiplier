@@ -12,7 +12,6 @@ public class Config {
     public static final ModConfigSpec.DoubleValue WATER_CREATURE;
     public static final ModConfigSpec.DoubleValue WATER_AMBIENT;
     public static final ModConfigSpec.DoubleValue MISC;
-    public static final ModConfigSpec.IntValue PORT;
 
     static {
         ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
@@ -51,10 +50,6 @@ public class Config {
         MISC = builder
                 .comment("Multiplier for MobCategory.MISC")
                 .defineInRange("misc", 1.0D, 0.0D, 100.0D);
-
-        PORT = builder
-                .comment("Defines the port for the api")
-                .defineInRange("port", 9874, 1, 65535);
 
         builder.pop();
         SPEC = builder.build();
