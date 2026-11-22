@@ -1,0 +1,23 @@
+name: Docs
+
+on:
+  push:
+    branches: [ main ]
+    paths:    [ 'docs/**' ]
+  pull_request:
+    paths:    [ 'docs/**' ]
+  workflow_dispatch:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: DasRed/github-workflows/.github/actions/docs-check@v1
+      - uses: DasRed/github-workflows/.github/actions/website-release@v1
+        if:   github.event_name != 'pull_request'
+        with:
+          token: ${{ secrets.WEBSITE_RELEASE_TOKEN }}
+          slug:  mob-cap-multiplier
