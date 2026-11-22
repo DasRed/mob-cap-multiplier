@@ -1,13 +1,14 @@
 {
-  "itemGroup.mobcapmultiplier": "Example Mod Tab",
-  "block.mobcapmultiplier.example_block": "Example Block",
-  "item.mobcapmultiplier.example_item": "Example Item",
-
-  "mobcapmultiplier.configuration.title": "Mob Cap Multiplier Configs",
-  "mobcapmultiplier.configuration.section.mobcapmultiplier.common.toml": "Mob Cap Multiplier Configs",
-  "mobcapmultiplier.configuration.section.mobcapmultiplier.common.toml.title": "Mob Cap Multiplier Configs",
-  "mobcapmultiplier.configuration.items": "Item List",
-  "mobcapmultiplier.configuration.logDirtBlock": "Log Dirt Block",
-  "mobcapmultiplier.configuration.magicNumberIntroduction": "Magic Number Text",
-  "mobcapmultiplier.configuration.magicNumber": "Magic Number"
+  "mobcapmultiplier.configuration.title": "Mob Cap Multiplier",
+  "mobcapmultiplier.configuration.section.mobcapmultiplier.server.toml": "Mob Cap Multiplier",
+  "mobcapmultiplier.configuration.section.mobcapmultiplier.server.toml.title": "Mob Cap Multiplier",
+  "mobcapmultiplier.configuration.multiplier": "Multiplier per mob category",
+  "mobcapmultiplier.configuration.monster": "Monster",
+  "mobcapmultiplier.configuration.creature": "Creature",
+  "mobcapmultiplier.configuration.ambient": "Ambient (bats)",
+  "mobcapmultiplier.configuration.axolotls": "Axolotls",
+  "mobcapmultiplier.configuration.undergroundWaterCreature": "Underground water creature (glow squids)",
+  "mobcapmultiplier.configuration.waterCreature": "Water creature (squids, dolphins)",
+  "mobcapmultiplier.configuration.waterAmbient": "Water ambient (fish)",
+  "mobcapmultiplier.configuration.misc": "Misc"
 }

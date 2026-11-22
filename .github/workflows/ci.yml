@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group:              ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: gradle/actions/setup-gradle@v6
+
+      - name: Build
+        run:  bash ./gradlew build --no-daemon
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: jar
+          path: build/libs/*.jar
+
+      - name: Release
+        if:   github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(grep -E '^mod_version=' gradle.properties | cut -d= -f2)
+          minecraft=$(grep -E '^minecraft_version=' gradle.properties | cut -d= -f2)
+          neoforge=$(grep -E '^neo_version=' gradle.properties | cut -d= -f2)
+          tag="v${version}"
+          if gh release view "$tag" > /dev/null 2>&1; then
+            echo "Release $tag exists, nothing to do."
+            exit 0
+          fi
+          printf 'For Minecraft %s with NeoForge %s or newer.\n\nThis mod is no longer developed.\n' "$minecraft" "$neoforge" > notes.md
+          gh release create "$tag" build/libs/*.jar --title "$tag" --notes-file notes.md --target "$GITHUB_SHA"
