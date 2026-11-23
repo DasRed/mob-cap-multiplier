@@ -1,6 +1,6 @@
 ---
 title: Verwendung
-description: Faktoren im laufenden Spiel mit /mobcapmultiplier oder kurz /mcm anzeigen, ändern und zurücksetzen.
+description: Die Mob-Cap-Faktoren im laufenden Spiel mit /mobcapmultiplier oder kurz /mcm anzeigen, ändern und zurücksetzen, mit allen Befehlen und Beispielen.
 order: 30
 slug: verwendung
 section: Benutzung

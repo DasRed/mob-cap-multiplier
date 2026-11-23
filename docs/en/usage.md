@@ -1,6 +1,6 @@
 ---
 title: Usage
-description: Show, change and reset the factors in game with /mobcapmultiplier or the short /mcm.
+description: Show, change and reset the mob cap factors in game with /mobcapmultiplier or the short /mcm, with all commands and examples for typical situations.
 order: 30
 slug: usage
 section: Usage

@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: Factors for all eight Minecraft mob categories with their vanilla limits.
+description: The factors for all eight Minecraft mob categories in the server config of mob-cap-multiplier, with their vanilla limits and how the mob cap is calculated.
 order: 20
 slug: configuration
 section: Setup

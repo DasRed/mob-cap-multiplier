@@ -1,6 +1,6 @@
 ---
 title: Konfiguration
-description: Faktoren für alle acht Mob-Kategorien von Minecraft mit ihren Vanilla-Grenzen.
+description: Die Faktoren für alle acht Mob-Kategorien von Minecraft in der Server-Konfiguration von mob-cap-multiplier, mit Vanilla-Grenzen und der Berechnung des Mob-Caps.
 order: 20
 slug: konfiguration
 section: Einrichtung

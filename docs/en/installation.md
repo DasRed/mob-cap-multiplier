@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Download mob-cap-multiplier as a JAR or build it yourself and put it into the mods folder.
+description: Download mob-cap-multiplier for Minecraft 1.21.8 with NeoForge as a JAR or build it yourself, put it into the mods folder and check that the mod is loaded.
 order: 10
 section: Getting started
 ---

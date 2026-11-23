@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: NeoForge mod that scales the Minecraft mob cap per category by a factor – more monsters, fewer fish or no bats at all.
+description: NeoForge mod that scales the Minecraft mob cap per category by a factor, for more monsters, fewer fish or no bats at all. Compatibility, status and next steps.
 order: 0
 section: Getting started
 ---
